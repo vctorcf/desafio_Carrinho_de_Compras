@@ -34,3 +34,5 @@ function limpar(){
 }
 
 document.addEventListener("DOMContentLoaded", setarQuantidadePara1());
+
+limpar();
