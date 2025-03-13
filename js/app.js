@@ -17,7 +17,7 @@ function adicionar(){
     //Porém o método .appendChild() precisa de um HTML como parametro, logo preciso cria-lo
     let produtoElemento = document.createElement("section");//criando um novo elemento(a tag <section>)
     produtoElemento.classList.add('carrinho__produtos__produto');//adicionando á tag <section> a classe 'carrinho__produtos__produto'
-    produtoElemento.innerHTML=`<span class="texto-azul">${novoProdutoQuantidade}x</span> ${novoProdutoNome} <span class="texto-azul">R$${novoProdutoPreco}</span>`;//adicionando o texto html que fica dentro da classe
+    produtoElemento.innerHTML=`<span class="texto-azul">${novoProdutoQuantidade}x</span> ${novoProdutoNome} <span class="texto-azul">R$${novoProdutoPreco*novoProdutoQuantidade}</span>`;//adicionando o texto html que fica dentro da classe
     produtos.appendChild(produtoElemento);
 
     let total = document.getElementById("valor-total");
